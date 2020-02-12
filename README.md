@@ -4,7 +4,9 @@
 
 Just what is "infrastructure as code"? You may have read the phrase in conjunction with cloud-native development, but like many buzzwords of today its specific meaning may have eluded you. Don't worry, we're about to go through a practical example of what the idea entails.
 
-This guide looks at the concept of infrastructure as code through the lens of a little tool to manage your Kubernetes clusters on Civo. Written by Civo user Gabe Duke, this tool, `civoctl` simply monitors a particular file for changes and uses the Civo API on your behalf. Creating a cluster is as simple as adding two lines to your file. By following this guide, you will download and set up `civoctl` and use it to both start and stop Kubernetes clusters on your account.
+This guide looks at the concept of infrastructure as code through the lens of a little tool to manage your Kubernetes clusters on Civo. Written by Civo user [Gabe Duke](https:/github.com/gabeduke), this tool, `civoctl` simply monitors a particular file for changes and uses the Civo API on your behalf. Creating a cluster is as simple as adding two lines to your file. That is the essence of infrastructure as code - having programs configure systems on your behalf based on declarative instructions that are simple for humans to produce.
+
+By following this guide, you will download and set up `civoctl` and use it to both start and stop Kubernetes clusters on your account.
 
 Gabe has a run-through screencast video [here](https://asciinema.org/a/8E4xO0YhHSt3BEbXbbEuZxGxL), in case you prefer that format to a written guide. Either way, we hope `civoctl` is fun, educational and maybe even useful!
 
@@ -172,4 +174,4 @@ As long as your `civoctl` process is running, it will watch the `yaml` file for 
 
 Through `civoctl`, we are able to declaratively command the creation and deletion of Kubernetes clusters by writing in a simple `yaml` file and having the process watch for changes in the file. By writing a tiny bit of code in human-readable form, we can have a service immediately execute it on the server side, spawning or removing clusters to our specification.
 
-Civoctl is still in early development. If you liked this guide and think `civoctl` could be of use to you, Gabe's project repository is here on GitHub, and he is accepting suggestions and pull requests for further features.
+Civoctl is still in early development. If you liked this guide and think `civoctl` could be of use to you, Gabe's [project repository is here on GitHub](https://github.com/gabeduke/civoctl), and he is accepting suggestions and pull requests for further features.
